@@ -25,4 +25,22 @@ Route::middleware([
     Route::get('/dash', function () {
         return view('dash.index');
     })->name('dash');
+
+    Route::get('/accident', function () {
+        return view('crud.index');
+    });
+
+    Route::get('/accident/create', function () {
+        return view('crud.create');
+    });
+
+    Route::get('/accident/edit', function () {
+        return view('crud.edit');
+    });
+
+
+    Route::get('/chat', function () {
+        return view('chat.index');
+    });
+
 });

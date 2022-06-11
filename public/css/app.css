@@ -1185,11 +1185,11 @@ select {
 .-mt-px {
   margin-top: -1px;
 }
-.ml-auto {
-  margin-left: auto;
-}
 .mt-0 {
   margin-top: 0px;
+}
+.ml-auto {
+  margin-left: auto;
 }
 .block {
   display: block;
