@@ -62,6 +62,14 @@
                     {{ __('Log in') }}
                 </x-jet-button>
             </div>
+            <div class="flex items-center justify-end mt-4">
+                <a href="{{ route('login.google') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 ">
+                    <img src="{{ asset('img/icons/google.png') }}" alt="" width="50" height="50">
+                </a>
+                <a href="{{ route('login.facebook') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 ">
+                    <img src="{{ asset('img/icons/facebook.png') }}" alt="" width="65" height="65">
+                </a>
+            </div>
         </form>
     </x-jet-authentication-card>
 </x-guest-layout>

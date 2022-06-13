@@ -30,17 +30,18 @@ Route::middleware([
         return view('crud.index');
     });
 
-    Route::get('/accident/create', function () {
+    Route::get('/accident/crear', function () {
         return view('crud.create');
     });
-
-    Route::get('/accident/edit', function () {
-        return view('crud.edit');
-    });
-
 
     Route::get('/chat', function () {
         return view('chat.index');
     });
 
 });
+
+Route::get('/login/facebook', [App\Http\Controllers\Auth\FacebookController::class, 'redirect'])->name('login.facebook')->middleware('guest');
+Route::get('/login/facebook/callback', [App\Http\Controllers\Auth\FacebookController::class, 'callback'])->name('login.facebook.callback')->middleware('guest');
+
+Route::get('/login/google', [App\Http\Controllers\Auth\GoogleController::class, 'redirect'])->name('login.google')->middleware('guest');
+Route::get('/login/google/callback', [App\Http\Controllers\Auth\GoogleController::class, 'callback'])->name('login.google.callback')->middleware('guest');

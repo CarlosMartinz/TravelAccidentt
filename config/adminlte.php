@@ -243,23 +243,11 @@ return [
             'icon'        => 'fa-fw fa-solid fa-chart-line',
         ],
         ['header' => 'REGISTROS'],
-
         [
             'text' => 'Accidentes',
+            'url'  => '/accident',
             'icon' => 'fa-fw fa-solid fa-car-burst',
-            'submenu' => [
-                [
-                    'text' => 'Registrar Accidente',
-                    'url'  => '/accident/create',
-                ],
-
-                [
-                    'text' => 'Editar accidente',
-                    'url'  => '/accident/edit',
-                ],
-            ],
         ],
-
         ['header' => 'CHAT'],
         [
         'text' => 'Chat',
